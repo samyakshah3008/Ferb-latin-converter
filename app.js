@@ -20,6 +20,8 @@ function errorHandler(error) {
 
   var inputText = txtInput.value;
 
+  outputDiv.innerText = "Translation in progress..."
+
 
 fetch(getTranslationURL(inputText))
  .then(response => response.json())
